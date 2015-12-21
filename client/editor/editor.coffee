@@ -1,4 +1,4 @@
-Template.EditorPage.rendered = ->
+Template.editor.rendered = ->
   editor = CodeMirror.fromTextArea @find("#myTextarea"),
     lineNumbers: true
     mode: "javascript"
@@ -16,5 +16,3 @@ Template.EditorPage.rendered = ->
       atomic: yes
       readOnly: yes
     warning?.clear()
-
-

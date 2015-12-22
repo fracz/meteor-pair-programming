@@ -1,19 +1,7 @@
 <template name="editor">
 
-    <textarea id="myTextarea">Template.EditorPage.helpers({
-
-    "editorOptions": function() {
-        return {
-            lineNumbers: true,
-            mode: "javascript"
-        }
-    },
-
-    "editorCode": function() {
-        return "Code to show in editor";
-    }
-
-});
+    <textarea id="myTextarea">
+        {{code}}
     </textarea>
 
 </template>

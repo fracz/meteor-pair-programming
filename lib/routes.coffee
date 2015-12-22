@@ -3,4 +3,6 @@ Router.configure
 
 Router.route('/', {name: 'home'})
 
-Router.route('/editor')
+Router.route '/editor',
+  data: ->
+    Codes.find().fetch()[0]
